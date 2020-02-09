@@ -1,0 +1,47 @@
+// header style
+
+.main-navigation{
+	ul{
+		li{
+			a{
+				text-transform: uppercase;
+				font-weight: bold;
+				letter-spacing: 1px;
+				padding: 0.5rem 1rem !important;
+			}
+		}
+	}
+	.navbar-toggler{
+		outline: none !important;
+		&:hover,&:focus{
+			outline: none !important;
+		}
+	}
+	.toggler-icon{
+		display: block;
+		width: 30px;
+		height: 3px;
+		border-radius: 30%;
+		transition: all .3s ease-in-out;
+		position: relative;
+		background-color: $color-hover;		
+		&:nth-child(2){
+			margin: 5px 0;
+		}
+	}
+	.navbar-toggler[aria-expanded=true]{
+		.toggler-icon{
+			&:nth-child(1){
+				transform: rotate(45deg);
+				top: 8px;
+			}
+			&:nth-child(2){
+				opacity: 0;
+			}
+			&:nth-child(3){
+				transform: rotate(-45deg);
+				bottom: 8px;
+			}
+		}
+	}
+}

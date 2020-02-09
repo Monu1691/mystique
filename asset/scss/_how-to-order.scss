@@ -1,0 +1,28 @@
+// how-to-order style
+
+.online-stores-sec{
+	.custom-list{
+		li{
+			font-size: 1.5rem;
+			margin-bottom: 2rem;
+			&:before{
+				//font-size: 2.2rem;
+			}
+			a{
+				&:hover{text-decoration: underline;}
+			}
+		}
+	}
+}
+
+.order-toll-sec{
+	.link{
+		a{
+			font-size: 1.5rem;
+			font-weight: bold;
+			&:hover,&:focus{
+				color: $color-hover;
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+// footer style
+
+.site-footer-sec{
+	background-color: $color-gray;
+	background-image: url(../img/footer-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.footer-menu{
+	margin: 2rem 0 1rem;
+	ul{
+		@extend %d-flex;
+		@extend %flex-wrap;
+		justify-content: center;
+		li{
+			a{
+				text-transform: uppercase;
+				font-weight: bold;
+				padding: 0.5rem 1rem !important;
+			}
+		}
+	}
+}
+.copyright-sec{
+	padding: 0.5rem 0;
+}
